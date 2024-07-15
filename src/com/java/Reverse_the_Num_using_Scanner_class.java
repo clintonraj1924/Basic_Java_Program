@@ -1,6 +1,5 @@
 package com.java;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Reverse_the_Num_using_Scanner_class {
@@ -19,7 +18,9 @@ public class Reverse_the_Num_using_Scanner_class {
 				rev /= 10;
 			}
 			System.out.println(remainter);
-		} catch (InputMismatchException e) {
+		} //catch (InputMismatchException e) //--> it is use for only "InputMismatchException"
+		catch (Exception e)  //--> it is use for all exception 
+		{
 			System.out.println("Invalid input. Please enter a valid number.");
 		}
 
